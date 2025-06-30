@@ -1,17 +1,30 @@
-name: Build LaTeX document
-on: [push]
+name: Construir Documento LaTeX
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
 jobs:
   build_latex:
+    name: Compilar PDF desde LaTeX
     runs-on: rocky
+
     steps:
-      - name: Set up Git repository
+      - name: Cloning Repo
         uses: actions/checkout@v4
-      - name: Compile LaTeX document
+
+      - name: Compiling LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-      - name: Upload PDF file
+          
+      - name: Pushing PDF
         uses: actions/upload-artifact@v4
         with:
-          name: PDF
-          path: cv.pdf
+          name: DM_resume
+          path: main.pdf
