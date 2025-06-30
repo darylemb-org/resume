@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV Themes
+\moderncvstyle{banking}  % Style options: banking, casual, classic, empty, oldstyle, fancy
+\moderncvcolor{blue}     % Color options: blue, orange, green, red, purple, grey
+
+% Adjust page margins
+\usepackage[scale=0.85]{geometry}
+\usepackage[unicode]{hyperref}
+
+% Personal Data
+\name{Daryl}{Mendoza}
+\title{DevOps Engineer/SRE}
+\address{Mexico City, Mexico}{}{}
+\phone[mobile]{+52 55-1452-3474}
+\email{darylemb@gmail.com}
+\email{daryl@darylemb.org}
+\social[github]{github.com/darylemb}
+\social[linkedin]{linkedin.com/in/darylemb} % Add if available
+
+\begin{document}
+\makecvtitle
+
+% Summary
+\section{Summary}
+\cvitem{}{
+  DevOps and Site Reliability Engineer with experience in automation, cloud infrastructure optimization (AWS, GCP, Azure), and CI/CD. \newline
+  Skilled in Kubernetes, Terraform, Monitoring, and Observability with OpenTelemetry, New Relic, Splunk, Grafana and Service Mesh. Passionate about efficiency, problem-solving, and implementing best practices in infrastructure as code and scalable application deployment.
+}
+
+% Skills
+\section{Skills}
+\cvitem{Tools \& Technologies}{Gradle, Jenkins, Azure, AWS, GCP, Python, Java 21, SpringBoot, Maven, Bash, Git, GitLab CI, GitHub Actions, Azure DevOps, Argo CD, jFrog Artifactory, Nexus, Docker, Podman, Kubernetes, Terraform, SonarQube, Veracode, Prometheus, Spinnaker, Puppet, Ansible, OpenTelemetry, New Relic, Splunk, Develocity, Istio, Linkerd, RHEL, Junit, Jmeter, Locust, K6.}
+\cvitem{Languages}{English, Spanish (Native).}
+
+% Work Experience
+\section{Experience}
+
+\cventry{09/2022 -- Present}{Sr DevOps Engineer}{Grid Dynamics}{Mexico City, Mexico}{}{
+\begin{itemize}
+    \item Designed and optimized cloud infrastructure (AWS, GCP and Azure), reducing costs by 25\% through proper resource allocation and storage optimization.
+    \item Implemented CI/CD pipelines using Jenkins, Spinnaker and GitLab CI, reducing deployment time by 40\%.
+    \item Led Kubernetes cluster migrations (on-premise to AKS, EKS to AKS, GKE to AKS) ensuring zero downtime and improved scalability.
+    \item Observability was implemented using OpenTelemetry, New Relic, and Splunk, reducing the detection time of issues by 35\%.
+    \item Configured Istio for traffic management in Kubernetes, improving resilience and load balancing.
+\end{itemize}
+}
+
+\cventry{02/2022 -- 09/2022}{DevOps Engineer}{Globant}{Mexico City, Mexico}{}{
+\begin{itemize}
+    \item Designed and deployed cloud architecture using Azure Resource Manager and Terraform.
+    \item Managed container deployments on EKS and GKE with multiple services.
+    \item Developed CI/CD pipelines in Jenkins and Azure DevOps to automate deployments.
+    \item Secure and optimized accessibility and availability of infrastructure.
+\end{itemize}
+}
+
+\cventry{08/2021 -- 02/2022}{Jr DevOps Engineer}{Grupo Salinas}{Mexico City, Mexico}{}{
+\begin{itemize}
+    \item Developed automation tests with Selenium.
+    \item Designed and optimized artifacts using Maven and Node.js.
+    \item Managed API gateways with over 800 APIs in a hybrid AWS-GCP architecture with Apigee solution.
+    \item Automated testing and CI/CD workflows in Jenkins.
+\end{itemize}
+}
+
+\cventry{05/2021 -- 08/2021}{Backend Developer / Middleware Engineer}{IPCom}{Mexico City, Mexico}{}{
+\begin{itemize}
+    \item Migrated the backend from SOAP to REST services.
+    \item Deployed and maintained Java web applications on JBoss and WebSphere servers.
+    \item Designed and documented API contracts using Swagger.
+\end{itemize}
+}
+
+% Education
+\section{Education}
+\cventry{2015 -- 2021}{B.Eng. in Telecommunications}{Universidad Nacional Autónoma de México}{}{}{}
+
+% Certifications
+\section{Certifications}
+\cvitem{2022 -- 2025}{\textbf{Certified Kubernetes Administrator (CKA)}, CNCF \\ 
+\href{https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/7f185bf7-3279-455c-9e83-d76c3c096258-daryl-ezequiel-mendoza-barcenas-f478ebb1-05db-4c48-ae42-bdef8612ce92-certificate.pdf}{\textcolor{blue}{View Certification}}}
+
+\cvitem{2022 -- 2024}{\textbf{Terraform Associate (002)}, HashiCorp \\ 
+\href{https://www.credly.com/badges/eaa1792c-9894-4781-84e6-f30898ea36d7}{\textcolor{blue}{View Certification}}}
+
+\cvitem{2023 -- 2026}{\textbf{Google Cloud Associate Cloud Engineer}, Google \\ 
+\href{https://www.credential.net/2ae5d147-426d-415f-9699-d3a4b393f863}{\textcolor{blue}{View Certification}}}
+
+\end{document}
