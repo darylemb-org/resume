@@ -25,3 +25,13 @@ jobs:
         with:
           name: DM_resume
           path: main.pdf
+          
+      - name: Upload pdf
+        uses: XPH0816/webdav-deploy-action@v0.3
+        with:
+          url: ${{ secrets.WEBDAV_URL }}
+          username: ${{ secrets.WEBDAV_USERNAME }}
+          password: ${{ secrets.WEBDAV_PASSWORD }}
+          local: "./"
+          remote: "github/"
+          method: "copy"
