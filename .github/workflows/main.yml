@@ -20,17 +20,10 @@ jobs:
         with:
           root_file: main.tex
           
-      - name: Pushing PDF
-        uses: actions/upload-artifact@v4
+      - name: Release PDF
+        uses: softprops/action-gh-release@v2
         with:
-          name: DM_resume
-          path: main.pdf
-          
-      - name: Upload pdf
-        uses: XPH0816/webdav-deploy-action@v0.3
-        with:
-          url: ${{ secrets.WEBDAV_URL }}
-          username: ${{ secrets.WEBDAV_USERNAME }}
-          password: ${{ secrets.WEBDAV_PASSWORD }}
-          local: "main.pdf"
-          remote: "DM_resume"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: "v1.0.${{ github.run_number }}"
+          name: "resume-DM-v1.0.${{ github.run_number }}"
+          files: main.pdf
