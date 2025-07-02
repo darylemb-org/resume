@@ -10,6 +10,8 @@ jobs:
   build_latex:
     name: Compilar PDF desde LaTeX
     runs-on: rocky
+    permissions:
+      contents: write
 
     steps:
       - name: Cloning Repo
